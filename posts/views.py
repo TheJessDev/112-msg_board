@@ -4,7 +4,7 @@ from .models import Post
 
 
 class PostListView(ListView):
-    template_name = "posts/List.html"
+    template_name = "posts/list.html"
     model = Post
 
 
@@ -16,4 +16,5 @@ class PostDetailView(DetailView):
 class PostCreateView(CreateView):
     template_name = "posts/new.html"
     model = Post
-    fields = ["title", "subtitle", "body"]
+    fields = ["title", "subtitle", "body"] 
+

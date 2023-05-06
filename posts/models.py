@@ -4,7 +4,7 @@ from django.urls import reverse
 
 class Post(models.Model):                           # example of inheritance
     title = models.CharField(max_length=128)         # multiple examples of composits
-    subtitles = models.CharField(max_length=256)
+    subtitle = models.CharField(max_length=256)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
